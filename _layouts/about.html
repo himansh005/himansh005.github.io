@@ -6,7 +6,7 @@ layout: default
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+           {% if site.title == "blank" -%}<span>{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
@@ -26,14 +26,25 @@ layout: default
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
+              alt=page.profile.image -%}
             {% endif -%}
             {%- if page.profile.address %}
             <div class="address">
               {{ page.profile.address }}
             </div>
             {%- endif %}
+            <div style="width: 100%; margin: 0 auto; text-align: center;">
+            {%- if site.email -%}
+            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope" style="font-size: 30px; color: #bb001b;"></i></a>&nbsp;&nbsp;
+            {% endif %}
+            {%- if site.github_username -%}
+            <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fab fa-github" style="font-size: 30px; color: darkslategrey;"></i></a>&nbsp;&nbsp;
+            {% endif %}
+            {%- if site.linkedin_username -%}
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin" style="font-size: 30px; color: #0077b5;"></i></a>
+            {% endif %}
+            </div>
+            
           </div>
           {%- endif %}
 

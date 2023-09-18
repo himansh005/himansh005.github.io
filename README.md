@@ -107,15 +107,6 @@ Feel free to add your own page(s) by sending a PR.
 <a href="https://abigalekim.github.io/" target="_blank">★</a>
 <a href="https://lucasresck.github.io/" target="_blank">★</a>
 <a href="https://users.wpi.edu/~lfichera/" target="_blank">★</a>
-<a href="https://anmspro.github.io/" target="_blank">★</a>
-<a href="https://berlyne.net/" target="_blank">★</a>
-<a href="https://filippomazzoli.github.io/" target="_blank">★</a>
-<a href="https://www.escontrela.me/" target="_blank">★</a>
-<a href="https://raffaem.github.io/" target="_blank">★</a>
-<a href="https://cbueth.de/" target="_blank">★</a>
-<a href="https://kyleaoman.github.io/" target="_blank">★</a>
-<a href="https://decwest.github.io/" target="_blank">★</a>
-<a href="https://www.jedburkat.com" target="_blank">★</a>
 </td>
 </tr>
 <tr>
@@ -164,30 +155,29 @@ Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.
 
   * [User community](#user-community)
   * [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
-  * [Table Of Contents](#table-of-contents)
   * [Getting started](#getting-started)
-    - [Installation](#installation)
-      - [Local setup using Docker (Recommended)](#local-setup-using-docker-recommended)
-      - [Local Setup (Legacy)](#local-setup-legacy)
+    + [Installation](#installation)
+      - [Local setup using Docker (Recommended on Windows)](#local-setup-using-docker-recommended-on-windows)
+      - [Local Setup (Standard)](#local-setup-standard)
       - [Deployment](#deployment)
       - [Upgrading from a previous version](#upgrading-from-a-previous-version)
-    - [FAQ](#faq)
-  - [Features](#features)
-    - [Publications](#publications)
-    - [Collections](#collections)
-    - [Layouts](#layouts)
+    + [FAQ](#faq)
+  * [Features](#features)
+    + [Publications](#publications)
+    + [Collections](#collections)
+    + [Layouts](#layouts)
       - [The iconic style of Distill](#the-iconic-style-of-distill)
-      - [Full support for math \& code](#full-support-for-math--code)
+      - [Full support for math & code](#full-support-for-math--code)
       - [Photos](#photos)
-    - [Other features](#other-features)
-      - [GitHub's repositories and user stats](#githubs-repositories-and-user-stats)
+    + [Other features](#other-features)
+      - [GitHub repositories and user stats](#github-repositories-and-user-stats)
       - [Theming](#theming)
       - [Social media previews](#social-media-previews)
       - [Atom (RSS-like) Feed](#atom-rss-like-feed)
       - [Related posts](#related-posts)
-  - [Contributing](#contributing)
-    - [Maintainers](#maintainers)
-  - [License](#license)
+  * [Contributing](#contributing)
+    + [Core Contributors](#core-contributors)
+  * [License](#license)
 
 ## Getting started
 
@@ -210,19 +200,18 @@ $ cd <your-repo-name>
 
 ---
 
-#### Local setup using Docker (Recommended)
-Using Docker to install Jekyll and Ruby dependencies is the easiest way.
+#### Local setup using Docker (Recommended on Windows)
 
-You need to take the following steps to get `al-folio` up and running on your local machine:
+You need to take the following steps to get `al-folio` up and running in your local machine:
 
 - First, install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).
-- Finally, run the following command that will pull the latest pre-built image from DockerHub and will run your website.
+- Finally, run the following command that will pull a pre-built image from DockerHub and will run your website.
 
 ```bash
 $ docker-compose up
 ```
 
-Note that when you run it for the first time, it will download a docker image of size 400MB or so. 
+Note that when you run it for the first time, it will download a docker image of size 300MB or so.
 
 Now, feel free to customize the theme however you like (don't forget to change the name!). After you are done, you can use the same command (`docker-compose up`) to render the webpage with all you changes. Also, make sure to commit your final changes.
 
@@ -244,14 +233,12 @@ $ docker-compose -f docker-local.yml up
 
 ---
 
-#### Local Setup (Legacy)
+#### Local Setup (Standard)
 
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), and also [Python](https://www.python.org/) and [pip](https://pypi.org/project/pip/) (*hint: for ease of managing python packages, consider using a virtual environment, like [venv](https://docs.python.org/pt-br/3/library/venv.html) or [conda](https://docs.conda.io/en/latest/). If you will use only `jupyter`, you can use [pipx](https://pypa.github.io/pipx/)*).
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*).
 
 ```bash
 $ bundle install
-# assuming pip is your Python package manager
-$ pip install jupyter
 $ bundle exec jekyll serve --lsi
 ```
 
@@ -416,29 +403,20 @@ If you have a different question, please ask using [Discussions](https://github.
    (Relevant issue: [130](https://github.com/alshedivat/al-folio/issues/130).)
 
 3. **Q:** My webpage works locally.
-    But after deploying, it fails to build and throws `Unknown tag 'toc'`.
-    How do I fix that? <br>
-   **A:** Make sure you followed through the [deployment instructions](#deployment) in the previous section.
-   You should have set the deployment branch to `gh-pages`.
-   (Related issue: [1438](https://github.com/alshedivat/al-folio/issues/1438).)
-
-4. **Q:** My webpage works locally.
     But after deploying, it is not displayed correctly (CSS and JS is not loaded properly).
     How do I fix that? <br>
    **A:** Make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`.
    Set `url` to `https://<your-github-username>.github.io` or to `https://<your.custom.domain>` if you are using a custom domain.
    If you are deploying a personal or organization website, leave `baseurl` blank.
    If you are deploying a project page, set `baseurl: /<your-project-name>/`.
-   If all previous steps were done correctly, all is missing is
-   [for your browser to fetch again the site stylesheet](https://github.com/alshedivat/al-folio/issues/1398#issuecomment-1609518404).
 
-5. **Q:** Atom feed doesn't work. Why?
+4. **Q:** Atom feed doesn't work. Why?
    <br>
    **A:** Make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`.
   RSS Feed plugin works with these correctly set up fields: `title`, `url`, `description` and `author`.
   Make sure to fill them in an appropriate way and try again.
 
-6. **Q:** My site doesn't work when I enable `related_blog_posts`. Why? <br>
+5. **Q:** My site doesn't work when I enable `related_blog_posts`. Why? <br>
    **A:** This is probably due to the [classifier reborn](https://github.com/jekyll/classifier-reborn) plugin, which is used to calculate
    related posts. If the error states `Liquid Exception: Zero vectors can not be normalized...`, it means that it could not calculate related
    posts for a specific post. This is usually caused by [empty or minimal blog posts](https://github.com/jekyll/classifier-reborn/issues/64)
@@ -618,7 +596,7 @@ A variety of beautiful theme colors have been selected for you to choose from.
 The default is purple, but you can quickly change it by editing the
 `--global-theme-color` variable in the `_sass/_themes.scss` file.
 Other color variables are listed there as well.
-The stock theme color options available can be found at `_sass/_variables.scss`.
+The stock theme color options available can be found at `_sass/variables.scss`.
 You can also add your own colors to this file assigning each a name for ease of
 use across the template.
 
@@ -677,14 +655,6 @@ If you are interested, please reach out!
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-### All Contributors
-
-<a href="https://github.com/alshedivat/al-folio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio&max=36" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
 
 ## License
 
