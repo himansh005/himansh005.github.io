@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://himansh005.github.iohimansh005/sitemap.xml
+Sitemap: https://himansh005.github.io/sitemap.xml
