@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b> Machine Learning Researcher </b> • <b style='color:maroon !important;'> 3X Top-Tier Publications </b> • <b style='color:darkblue !important;'>10X Hackathon Winner </b> • <b style='color:green !important;'>2X Patents </b> 
+subtitle: <b> Machine Learning Researcher </b> • <b style='color:maroon !important;'> 3X Top-Tier Publications </b> • <b style='color:lightblue !important;'>10X Hackathon Winner </b> • <b style='color:green !important;'>2X Patents </b> 
 
 profile:
   align: right
