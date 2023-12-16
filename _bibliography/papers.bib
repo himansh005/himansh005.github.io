@@ -11,19 +11,6 @@
   preview={brainwave.png}
 }
 
-@misc{thakur2023active,
-      abbr={BMVC},
-      title={Active Learning for Fine-Grained Sketch-Based Image Retrieval}, 
-      author={Himanshu Thakur and Soumitri Chattopadhyay},
-      journal={The British Machine Vision Conference},
-      year={2023},
-      eprint={2309.08743},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      arxiv={2309.08743},
-      preview={bmvc2023.png},
-      selected={true}
-}
 
 @article{thakur2023language,
       abbr={ACL},
@@ -39,6 +26,7 @@
       website={https://aclanthology.org/2023.acl-short.30/},
       code={https://github.com/himansh005/data_debias},
       preview={acl2023.png},
+      abstract={Societal biases present in pre-trained large language models are a critical issue as these models have been shown to propagate biases in countless downstream applications, rendering them unfair towards specific groups of people. Since large-scale retraining of these models from scratch is both time and compute-expensive, a variety of approaches have been previously proposed that de-bias a pre-trained model. While the majority of current state-of-the-art debiasing methods focus on changes to the training regime, in this paper, we propose data intervention strategies as a powerful yet simple technique to reduce gender bias in pre-trained models. Specifically, we empirically show that by fine-tuning a pre-trained model on only 10 de-biased (intervened) training examples, the tendency to favor any gender is significantly reduced. Since our proposed method only needs a few training examples, our few-shot debiasing approach is highly feasible and practical. Through extensive experimentation, we show that our debiasing technique performs better than competitive state-of-the-art baselines with minimal loss in language modeling ability.},
       selected={true}
       
 }
@@ -54,14 +42,33 @@
       primaryClass={cs.CL},
       bibtex_show={true},
       arxiv={2310.10628},
-      code={https://github.com/abacusai/to-the-cutoff}
+      code={https://github.com/abacusai/to-the-cutoff},
       website={https://openreview.net/forum?id=86SnqmSVv2},
-      preview={data_contamination.png},
+      preview={data_cont.png},
+      abstract={Recent claims about the impressive abilities of large language models (LLMs) are often supported by evaluating publicly available benchmarks. Since LLMs train on wide swaths of the internet, this practice raises concerns of data contamination, i.e., evaluating on examples that are explicitly or implicitly included in the training data. Data contamination remains notoriously challenging to measure and mitigate, even with partial attempts like controlled experimentation of training data, canary strings, or embedding similarities. In this work, we conduct the first thorough longitudinal analysis of data contamination in LLMs by using the natural experiment of training cutoffs in GPT models to look at benchmarks released over time. Specifically, we consider two code/mathematical problem-solving datasets, Codeforces and Project Euler, and find statistically significant trends among LLM pass rate vs. GitHub popularity and release date that provide strong evidence of contamination. By open-sourcing our dataset, raw results, and evaluation framework, our work paves the way for rigorous analyses of data contamination in modern models. We conclude with a discussion of best practices and future steps for publicly releasing benchmarks in the age of LLMs that train on webscale data.},
       selected={true}
 
 }
 
-@article{kapur_thakur_kumar_2022,
+@article{thakur2023active,
+      abbr={BMVC},
+      title={Active Learning for Fine-Grained Sketch-Based Image Retrieval}, 
+      author={Himanshu Thakur and Soumitri Chattopadhyay},
+      journal={British Machine Vision Conference},
+      year={2023},
+      eprint={2309.08743},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      bibtex_show={true},
+      arxiv={2309.08743},
+      preview={bmvc2023.png},
+      website={https://proceedings.bmvc2023.org/337/},
+      abstract={The ability to retrieve a photo by mere free-hand sketching highlights the immense potential of Fine-grained sketch-based image retrieval (FG-SBIR). However, its rapid practical adoption, as well as scalability, is limited by the expense of acquiring faithful sketches for easily available photo counterparts. A solution to this problem is Active Learning, which could minimise the need for labeled sketches while maximising performance. Despite extensive studies in the field, there exists no work that utilises it for reducing sketching effort in FG-SBIR tasks. To this end, we propose a novel active learning sampling technique that drastically minimises the need for drawing photo sketches. Our proposed approach tackles the trade-off between uncertainty and diversity by utilising the relationship between the existing photo-sketch pair to a photo that does not have its sketch and augmenting this relation with its intermediate representations. Since our approach relies only on the underlying data distribution, it is agnostic of the modelling approach and hence is applicable to other cross-modal instance-level retrieval tasks as well. With experimentation over two publicly available fine-grained SBIR datasets ChairV2 and ShoeV2, we validate our approach and reveal its superiority over adapted baselines},
+      selected={true}
+}
+
+@article{kapur_thakur_kumar_2022, 
+ abbr={Neurips},
  title={Safeguarding People against Social Media Frauds during the COVID-19 Oxygen Supply Crisis in India},
  url={osf.io/58sry},
  DOI={10.31219/osf.io/58sry},
