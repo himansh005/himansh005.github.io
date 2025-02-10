@@ -4,11 +4,86 @@
     - name: Full Name
       value: Himanshu Thakur
     - name: Location
-      value: Pittsburgh, PA
+      value: Cupertino, CA
     - name: Email
-      value: hthakur [AT] andrew [DOT] cmu [DOT] edu
+      value: scihimanshu10 [AT] gmail [DOT] com
     - name: Languages
-      value: English, Hindi, German
+      value: English, Hindi
+
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: Senior Machine Learning Engineer
+      institution: J.P Morgan Chase & Co.
+      year: Feb 2024 - Present
+      description:
+        - Devised a deep-cross multimodal ranking model for offer category recommendation serving 90M Chase customers, increasing clicks by 12% in A/B tests and driving $100M in revenue; outperformed BAU by 4x and random by 2x in F1 score.
+        - Conceived an agentic framework to build digital twins of Chase customers for offline A/B testing our models — fine-tuned LLaMA-3 70B (using RAFT) on GPT-4 distilled tabular interaction data to hyper-personalize agents—first-authored a NeurIPS 2025 paper.
+        - Pioneered a distributed LLM inference and fine-tuning framework using vLLM and torchtune on team’s infrastructure, enabling 2 brand new projects, cutting setup time by 8 weeks, and establishing the team’s first GenAI environment.
+        - Eliminated feature errors and boilerplate by building a PySpark feature transformation library, enabling 20+ developers to define new jobs in 1 day instead of 7 using simple configs and functional primitives, reducing production model failures by 20%.
+        
+    - title: Senior Machine Learning Engineer
+      institution: Morgan Stanley
+      year: Aug 2020 - July 2022
+      description:
+        - Spearheaded an 8-member team to build a distributed batch-job failure prediction model using Spark MLlib & Scala, achieved 94% accuracy, and reduced downtime by 100+ hours annually—recognized as the top contributor to global firm resiliency.
+        - Revolutionized graph search by creating a natural language-to-Cypher query translation framework, empowering 50+ teams' ML models.
+        - Researched and developed a domain-agnostic recommendation engine (using large-scale and distributed training of deep learning models) powered by graph databases, recognized as most innovative firmwide project.
+    
+    - title: Data Scientist Intern
+      institution: Locale.AI
+      year: Dec 2019 - July 2020
+      description:
+        - Founding Member of the Data Science team, developed low-latency, real-time geospatial ML frameworks to power intelligent location-based decision-making.
+        - Invented a novel clustering algorithm for human activity discovery from raw geospatial ping data using semi-supervised representation learning, enabling the automated identification of 18% more business areas from previously untapped data.
+        - Productionized and scaled a high-throughput timeseries anomaly detection framework using temporal convolutional networks (TCN), increasing request processing speed 6x and empowering 10 companies to predict vehicle vandalism and trip delays with greater reliability.
+    
+    - title: Machine Learning and Web Development Intern (Part-Time)
+      institution: S4S Technologies
+      year: Jan 2020 - June 2020
+      description:
+        - Designed and built the entire internal operations dashboard, streamlining team workflows and decision-making.
+        - Developed a computer vision solution for automated food quality assurance, enhancing accuracy and efficiency in defect detection.
+          
+    - title: Machine Learning Intern
+      institution: Sigmaways Inc
+      year: May 2019 - July 2019
+      description:
+        - Developed an AI-driven portfolio recommendation engine using an LSTM-based predictor and a Meta-Heuristic Optimizer, optimizing personalized investment strategies.
+        - Built and applied NLP techniques in a seamless chatbot interface, improving user interaction and accessibility to financial analysts.
+          
+    - title: Software Engineering Intern
+      institution: Nova (P & D)
+      year: May 2018 - July 2018
+      description:
+        - As a Summer Intern, I enhanced the bookstore's software capabilities by developing a new Edge-Billing system, enabling multiple staff members to finalize bills directly on their smartphones, which significantly increased transaction speed through simultaneous billing.
+        - Leveraged data analytics to introduce new software features that provided better insights into sales and purchases, further optimizing operations.
+        - Streamlined the transaction process by implementing a barcode scanner app linked to Google Docs, enabling staff to independently process orders, which saved months of hiring efforts and helped the bookstore meet its sales target.
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Scientist Intern
+      institution: Abacus.AI
+      year: May 2023 - Aug 2023
+      description:
+        - Led research on LLM adapter linearity (soft prompts, LoRAs), developing a gradient-based algorithm that approximates full fine-tuning performance with only (depth × num of LoRA) parameters, achieving <10% F1 error on Bloom for NewQA and SQuAD. 
+        - Devised coding and reasoning LLM evaluation benchmark to debunk staleness in popular NLP benchmarks due to memorization in LLMs (GPT4, GPT3.5-turbo), open-sourced library, contributed to writing research paper accepted at ICLR 2024 (contributed talk). Code - https://github.com/abacusai/to-the-cutoff
+
+    - title: Graduate Research Assistant
+      institution: Robotics Institute, Carnegie Mellon University
+      year: Jan 2023 - July 2023
+      description:
+        - Led a team of 8 graduate researchers in ML research at the Biorobotics Lab to enhance the generalization and robustness of models for e-waste recycling. Focus areas included robust segmentation, out-of-distribution detection, and reinforcement learning.
+        - Invented a novel area-relaxation-based loss function that improved state-of-the-art segmentation on X-ray images of e-waste materials, increasing IoU by 15% and boosting small object detection accuracy by 80%.
+        - Developed and deployed a real-time distribution shift detection algorithm, achieving 99% accuracy in out-of-distribution detection for e-waste material classification.
+    
+    - title: Research Intern
+      institution: SketchX Lab, University of Surrey
+      year: Feb 2021 - Feb 2022
+      description:
+        - Invented a novel active learning algorithm for fine-grained cross-modal instance-level retrieval tasks,
+        - Increased mean top1 accuracy by 5% over state-of-the-art technique, published a first-authored paper to a top-tier conference (BMVC). 
 
 - title: Education
   type: time_table
@@ -65,79 +140,14 @@
             - Ranked in Top 3 teams at 3 national hackathons
             - Secured 2 patents
           
-- title: Research Experience
-  type: time_table
-  contents:
-    - title: Research Scientist Intern
-      institution: Abacus.AI
-      year: May 2023 - Aug 2023
-      description:
-        - Conceptualized and led research on exploring linear properties of LLM adapters (soft prompts, LoRAs)
-        - Invented a novel learning algorithm to approximate a linear combination of pre-trained LoRAs to enhance generalization and multi-task performance
-        - Collaborated with researchers and developed new metrics for debunking staleness in popular NLP benchmarks due to memorization in LLMs
-
-    - title: Graduate Research Assistant
-      institution: Robotics Institute, Carnegie Mellon University
-      year: Jan 2023 - July 2023
-      description:
-        - Led and mentored a team of 6 research assistants for increasing generalization and robustness of computer vision tasks (segmentation, classification and tracking) for robotic e-waste disassembly at Biorobotics lab
-        - Devised a multimodal deep neural network architecture for semantic segmentation
-        - Developed a new loss function robust to label noise, improve baseline performance by 15% IoU and generalization 20% IoU 
-        - Implemented an out-of-distribution detection algorithm achieving 98.6% accuracy
-    
-    - title: Research Intern
-      institution: SketchX Lab, University of Surrey
-      year: Feb 2021 - Feb 2022
-      description:
-        - Invented a novel active learning algorithm for fine-grained cross-modal instance-level retrieval tasks,
-        - Increased mean top1 accuracy by 5% over state-of-the-art technique, published a first-authored paper to a top-tier conference (BMVC). 
-
-- title: Work Experience
-  type: time_table
-  contents:
-    - title: Senior Technology Associate
-      institution: Morgan Stanley
-      year: Aug 2020 - July 2022
-      description:
-        - Developed a distributed deep learning framework for real-time failure prediction (time-series forecasting) and detection; 
-        - Led to 5000x reduction in failure detection time, enabled prediction of batch job failures with 94% accuracy, awarded best contributor to global firm resiliency out of 5000+ nominees.
-        - Pioneered graph database as a service to enable 100x faster search and data lineage applications
-        - Rsearched and developed a domain-agnostic recommendation engine (using large-scale and distributed training of deep learning models) powered by graph databases, recognized as most innovative firmwide project.
-    
-    - title: Data Scientist Intern
-      institution: Locale.AI
-      year: Dec 2019 - July 2020
-      description:
-        - Developed a novel clustering algorithm for human activity discovery from raw geo-spatial ping data using semi-supervised representation learning, enabled automated discovery of 18% new business areas from previously unused data.
-        - Productionized and scaled a timeseries anomaly detection framework using temporal convolutional networks (TCN), increased requests throughput by 6x, helped 10 companies in reliably predicting vehicle vandalism and trip delays.
-    
-    - title: Machine Learning and Web Development Intern (Part-Time)
-      institution: S4S Technologies
-      year: Jan 2020 - June 2020
-      description:
-        - Worked on creating the entire internal operations dashboard for the team as well as a computer vision solution to solve food quality assurance problem.
-          
-    - title: Summer Intern
-      institution: Sigmaways Inc
-      year: May 2019 - July 2019
-      description:
-        - Worked on AI based portfolio recommendation engine using LSTM based predictor and Meta-Heuristic Optimiser. Also, built a chatbot interface to the service.
-          
-    - title: Software Engineering Intern
-      institution: Nova (P & D)
-      year: May 2018 - July 2018
-      description:
-        - Modernized the existing software capabilities and introduce a new method for speedy billing.
-        - Worked on Data Analytics and Software Development to create a new Edge-Billing system which allowed multiple working staffs to finalise a bill on their smartphones itself.
-        - Allowed multiple simultaneous billing, hence speeding up the process and developed software features which allowed better insights into sale and purchase.
-
-
 - title: Open Source Projects
   type: time_table
   contents:
     - title: <a href="https://aionthebeach.com/">AI on the Beach</a>
       year: 2020
-      description: Developed a data visualization library that can render over 10 GB of data into a single animated scatter plot under minutes.
+      description: 
+       - Developed a high-performance library for animating millions of geospatial pings using Dask and DataShader, enabling rapid visualization. 
+       - Analyzed shark movement patterns with geospatial intelligence and machine learning, identifying potential attack sites in advance.
 
 - title: Honors and Awards
   type: time_table
@@ -152,4 +162,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Music Composition, Hiking, Travelling
+    - <u>Hobbies:</u> Reading, Music Composition, Hiking, Travelling

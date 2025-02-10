@@ -52,6 +52,45 @@ layout: default
             {{ content }}
           </div>
 
+          <div class="brands-section">
+            <h2>Affiliations</h2>
+            <div class="brands-logos">
+              <div class="brand-container">
+                <img src="{{ page.brands.jpmc | prepend: 'assets/img/' }}" alt="J.P Morgan Chase" class="brand-logo">
+                <p class="industry-text">AI for B2C Financial Personalization</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.abacus | prepend: 'assets/img/' }}" style="margin-left: 20px; max-width: 200px; max-height: 150px;" alt="Abacus AI" class="brand-logo">
+                <p class="industry-text">LLM Research</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.cmu | prepend: 'assets/img/' }}" style="margin-left: 15px; max-width: 150px; max-height: 100px;" alt="Carnegie Mellon University" class="brand-logo">
+                <p class="industry-text">Computer Vision & LLM Research</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.mstanely | prepend: 'assets/img/' }}" style="margin-top: -5px; max-width: 200px; max-height: 150px;" alt="Morgan Stanley" class="brand-logo">
+                <p class="industry-text">AI for B2B Financial Search</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.surrey | prepend: 'assets/img/' }}" style="max-width: 200px; max-height: 150px;" alt="University of Surrey" class="brand-logo">
+                <p class="industry-text">Machine Learning Research</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.s4s | prepend: 'assets/img/' }}"  style="margin-left: 10px; max-width: 150px; max-height: 100px;"alt="S4S Technologies" class="brand-logo">
+                <p class="industry-text">AI for Agriculture Technology</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.sigmaways | prepend: 'assets/img/' }}" style="max-width: 200px; max-height: 150px;" alt="Sigmaways Inc" class="brand-logo">
+                <p class="industry-text">AI for Consulting</p>
+              </div>
+              <div class="brand-container">
+                <img src="{{ page.brands.locale | prepend: 'assets/img/' }}"  style="max-width: 200px; max-height: 150px;"alt="Locale.AI" class="brand-logo">
+                <p class="industry-text">AI Agents for Sales</p>
+              </div>
+            </div>
+          </div>
+          
+
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
@@ -86,3 +125,4 @@ layout: default
         </article>
 
 </div>
+

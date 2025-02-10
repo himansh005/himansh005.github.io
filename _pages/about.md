@@ -2,7 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b> Machine Learning Researcher </b> • <b style='color:maroon !important;'> 3X Top-Tier Publications </b> • <b>10X Hackathon Winner </b> • <b style='color:green !important;'>2X Patents </b> 
+subtitle: <b> Machine Learning Researcher </b> • <b style='color:#3399ff !important;'> 5X Top-Tier Publications </b> • <b style='color:#d966ff !important;'>10X Hackathon Winner </b> • <b style='color:green !important;'>2X Patents </b> 
+
+brands:
+  jpmc: jpmc.png
+  mstanely: mstanley.png
+  locale: locale.png
+  sigmaways: sigmaways.png
+  s4s: s4s.png
+  cmu: cmu.png
+  abacus: abacus.png
+  surrey: surrey.png
 
 profile:
   align: right
@@ -21,11 +31,18 @@ social: true  # includes social icons at the bottom of the page
 
 > “Make everything as simple as possible, but not simpler.” - Albert Einstein
 
-I am a graduate student at [Carnegie Mellon University](https://www.cmu.edu/) studying computational data science and advised by [Dr. Zachary Lipton](https://www.zacharylipton.com/). My research goal is to **make deep learning models** **safe**, **robust**, and **trustworthy** to catalyze its adoption in critical application areas. I have been fortunate to be advised by excellent professors [Dr. L.P. Morency](https://www.cs.cmu.edu/~morency/) and [Dr. Bhiksha Raj](http://mlsp.cs.cmu.edu/people/bhiksha/index.php).
+I am a machine learning researcher and engineer specializing in LLMs, AI agents, and personalization.
 
-In my previous life, I spent two years building large-scale search, recommendation, and forecasting systems at [Morgan Stanley](https://www.morganstanley.com/). I was also fortunate to gain extraordinarily fresh research perspectives through my internships in AI at three very unique industries – [Locale.ai](https://www.locale.ai/) (location intelligence), [Sigmaways](https://www.sigmaways.com/) (technology consulting), and [S4S Technologies](https://s4stechnologies.com/) (food processing).
+As a researcher, my goal is to make deep learning models safe, robust, and trustworthy to accelerate their adoption in critical applications. I regularly publish my work at top-tier conferences such as [NeurIPS](https://nips.cc/), [ACL](https://www.aclweb.org/), and [ICLR](https://iclr.cc/). To bring my research to life, I build scalable deep learning models that can serve billions of users across unique industrial domains, with a keen focus on the highest standards of code quality. My work bridges deep learning research with scalable AI software, addressing large-scale challenges in trustworthy AI, multimodal intelligence, and LLM infrastructure.
 
-I completed my undergraduate degree in computer science and engineering from the [Vellore Institute of Technology](https://vit.ac.in/). I was fortunate to be mentored by [Dr. Balakrushna Tripathy](http://www.bktripathy.co.in/) on my research. Beyond academics, I thoroughly enjoyed devising and implementing AI prototypes for problems in the domains of education technology, woman's safety, and unmanned aerial vehicles. 
+At [J.P. Morgan Chase](https://www.jpmorganchase.com/), I develop AI-driven personalization models serving 90M+ users, including multimodal ranking systems, digital twin agents, and GenAI infrastructure. I thrive at the intersection of cutting-edge research and large-scale deployment, ensuring that innovations in AI translate into real-world impact.
+
+Previously, I spent two years at [Morgan Stanley](https://www.morganstanley.com/) building large-scale search, recommendation, and forecasting systems. Beyond financial services, I explored AI in three diverse industries—location intelligence ([Locale.ai](https://www.locale.ai/)), AI-driven consulting ([Sigmaways](https://www.sigmaways.com/)), and food processing automation ([S4S Technologies](https://s4stechnologies.com/))—gaining a cross-domain perspective on AI applications.
+
+I hold a Master’s in Computational Data Science from [Carnegie Mellon University](https://www.cmu.edu/), where I was advised by [Dr. Zachary Lipton](https://www.zacharylipton.com/) and worked closely with [Dr. Louis-Philippe Morency](https://www.cs.cmu.edu/~morency/) and [Dr. Bhiksha Raj](http://mlsp.cs.cmu.edu/people/bhiksha/index.php) on LLM adaptation, robustness, and fairness problems. As a CS undergrad at [VIT](https://vit.ac.in/), my research under [Dr. Balakrushna Tripathy](http://www.bktripathy.co.in/) focused on AI applications in education technology, women’s safety, and autonomous systems.
+
+With a mission to push the boundaries of AI research and engineering at scale, I am always exploring ways to make AI more accessible, scalable, and impactful.
+
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

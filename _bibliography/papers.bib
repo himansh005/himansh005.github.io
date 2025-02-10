@@ -11,6 +11,21 @@
   preview={brainwave.png}
 }
 
+@article{thakurpersonas,
+      abbr={Neurips},
+      title={Personas within Parameters: Fine-Tuning Small Language Models with Low-Rank Adapters to Mimic User Behaviors}, 
+      author={Thakur, Himanshu and Agrawal, Eshani and Mukund, Smruthi},
+      journal={Neural Information Processing Systems (AFM Workshop)},
+      year={2024},
+      primaryClass={cs.CL},
+      bibtex_show={true},
+      code={https://github.com/himansh005/persona_lora},
+      pdf={https://openreview.net/pdf?id=WMtvukapVW},
+      preview={personalora.jpg},
+      abstract={A long-standing challenge in developing accurate recommendation models is simulating user behavior, mainly due to the complex and stochastic nature of user interactions. Towards this, one promising line of work has been the use of Large Language Models (LLMs) for simulating user behavior. However, aligning these general-purpose large pre-trained models with user preferences necessitates: (i) effectively and continously parsing large-scale tabular user-item interaction data, (ii) overcoming pre-training-induced inductive biases to accurately learn user specific knowledge, and (iii) achieving the former two at scale for millions of users. While most previous works have focused on complex methods to prompt an LLM or fine-tune it on tabular interaction datasets, our approach shifts the focus to extracting robust textual user representations using a frozen LLM and simulating cost-effective, resource-efficient user agents powered by fine-tuned Small Language Models (SLMs). Further, we showcase a method for training multiple low-rank adapters for groups of users or persona, striking an optimal balance between scalability and performance of user behavior agents. Our experiments provide compelling empirical evidence of the efficacy of our methods, demonstrating that user agents developed using our approach have the potential to bridge the gap between offline metrics and real-world performance of recommender systems.},
+      selected={true}
+      
+}
 
 @article{thakur2023language,
       abbr={ACL},
@@ -64,7 +79,7 @@
       preview={bmvc2023.png},
       website={https://proceedings.bmvc2023.org/337/},
       abstract={The ability to retrieve a photo by mere free-hand sketching highlights the immense potential of Fine-grained sketch-based image retrieval (FG-SBIR). However, its rapid practical adoption, as well as scalability, is limited by the expense of acquiring faithful sketches for easily available photo counterparts. A solution to this problem is Active Learning, which could minimise the need for labeled sketches while maximising performance. Despite extensive studies in the field, there exists no work that utilises it for reducing sketching effort in FG-SBIR tasks. To this end, we propose a novel active learning sampling technique that drastically minimises the need for drawing photo sketches. Our proposed approach tackles the trade-off between uncertainty and diversity by utilising the relationship between the existing photo-sketch pair to a photo that does not have its sketch and augmenting this relation with its intermediate representations. Since our approach relies only on the underlying data distribution, it is agnostic of the modelling approach and hence is applicable to other cross-modal instance-level retrieval tasks as well. With experimentation over two publicly available fine-grained SBIR datasets ChairV2 and ShoeV2, we validate our approach and reveal its superiority over adapted baselines},
-      selected={true}
+      selected={false}
 }
 
 @article{kapur_thakur_kumar_2022, 
@@ -81,6 +96,4 @@
  bibtex_show={true},
  pdf={paper_final_neurips_ML4D.pdf},
  preview={ml4d.png}
-
-
 }

@@ -13,3 +13,46 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+.brands-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.brands-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.brands-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.brand-container {
+  text-align: center;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.brand-logo {
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.1);
+}
+
+.industry-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: normal;
+}
